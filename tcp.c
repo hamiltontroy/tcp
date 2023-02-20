@@ -43,7 +43,7 @@ int wait_for_connection(int listener)
 	return accept(listener, NULL, NULL);
 }
 
-int get_ip_address(int ipv4_socket, char *destination)
+void get_ip_address(int ipv4_socket, char *destination)
 {
 	struct sockaddr_in address;
 	socklen_t len;
